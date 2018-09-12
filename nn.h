@@ -4,10 +4,15 @@
 #include <vector>
 #include <string>
 
+typedef struct w_grid {
+	int column;
+	int row;
+}w_grid;
+
 class NN {
 	public:
 		NN();
-		void network_grid(std::vector<int>, std::string);
+		void network_grid(std::vector<w_grid>, std::string);
 		void load_model();
 		void output_model(); 
 		double predict();

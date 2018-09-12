@@ -8,12 +8,11 @@
 NN::NN()
 {}
 
-void NN::network_grid(std::vector<int> v, std::string activate) {
-	std::vector<std::vector<std::vector<int> > > all_weight_grids;
-	for (std::vector<int>::iterator iter = v.begin(); iter != v.end(); ++iter) {
-		std::vector<std::vector<int> > weight_grid(v[iter], std::vector<int>(v[iter]+1));
-		all_weight_grids.push_back(weight_grid); 
-	}	
+void NN::network_grid(std::vector<w_grid> v, std::string activate) {
+	std::vector<std::vector<int> > weight;
+	for (std::vector<w_grid>::iterator iter = v.begin(); iter != v.end(); ++iter) {
+		//
+	}
 
 }
 
